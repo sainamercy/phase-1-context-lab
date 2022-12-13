@@ -57,7 +57,7 @@ function hoursWorkedOnDate(soughtDate) {
 
 function wagesEarnedOnDate(dateSought) {
   const Wage = hoursWorkedOnDate.call(this, dateSought) * this.payPerHour;
-  return parseFloat(Wage);
+  return Wage;
 }
 
 function findEmployeeByFirstName(srcArray, firstName) {
